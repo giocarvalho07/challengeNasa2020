@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farm to you home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab2e6f2a82.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel=" stylesheet " href=" https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css ">
+
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/script.js"></script>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../style/materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+     <link rel="shortcut icon" href="../pictures/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <nav class="nav_transparente ">
+        <div class="nav-wrapper container">
+          <a class="brand-logo right logo-nome" href="../home.html"> <img class="logotipo" src="../pictures/logo.png">
+          <a href="../home.html" data-target="menu-responsive" class="sidenav-trigger">
+            <i class="material-icons menu-respo">format_align_justify</i>
+          </a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <a href="../home.html"> <img class="logotipo"  src="../pictures/logoNasa.png">
+          </ul>
+        </div>
+      </nav>
+
+      <ul id="menu-responsive" class=" sidenav">
+        <li><a href="../pages/dash_parceiro.html">Inf. Parceiros</a></li>
+        <li><a href="../pages/dash_cidadao.html">Inf. Cidadão </a></li>
+  
+      </ul>
+
+      <section class="jumbotron white text-center contCaixa_cadastCidadao">
+
+
+      <div class="form_cadastro_cidadao" >
+        <form method="get" action=".">
+
+            <label>Nome: 
+            <input name="nome" type="text" id="nome" value="" size="40" maxlength="9"onblur="pesquisacep(this.value);" /></label><br />
+
+            <label>Email:
+            <input name="email" type="text" id="email" value="" size="40" maxlength="9"onblur="pesquisacep(this.value);" /></label><br />
+
+            <label>Cpf:
+            <input name="cpf" type="text" id="cpf" value="" size="30" maxlength="9"onblur="pesquisacep(this.value);" /></label><br />
+              
+            <label>Fone:
+            <input name="fone" type="text" id="fone" value="" size="30" maxlength="9"onblur="pesquisacep(this.value);" /></label><br />
+
+
+            <label>Cep:
+            <input name="cep" type="text" id="cep" value="" size="20" maxlength="9"
+            onblur="pesquisacep(this.value);" /></label><br />
+            <label>Rua:
+            <input name="rua" type="text" id="rua" size="40" /></label><br />
+            <label>Bairro:
+            <input name="bairro" type="text" id="bairro" size="30" /></label><br />
+            <label>Cidade:
+            <input name="cidade" type="text" id="cidade" size="30" /></label><br />
+            <label>Estado:
+            <input name="uf" type="text" id="uf" size="2" /></label><br />
+            <label>IBGE:
+            <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+    
+              <button class="waves-effect waves-light btn">
+                <a class="a_link" href="../pages/dash_cidadao.html">
+                  Entrar</a>
+              </button>
+    
+          </form>
+      </div> 
+      
+      <div class="imagem_cidadao" >
+          <img src="../pictures/imgCidadao.png" alt="imagem de pessoas a mesa jantando">
+      </div>
+      
+
+    </section>
+
+          <!-- JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="style/materialize/js/materialize.min.js"></script>
+
+</body>
+</html>

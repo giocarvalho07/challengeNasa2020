@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#fafafa;
+}
+
+.menu-mobile{
+    margin-inline-end: 15px ;
+}
+
+.nav_transparente{ 
+    background-color:rgb(194, 194, 194);
+    
+}
+
+
+.banner_img{
+    width: 100%;
+    height: 800px;
+    background-image: url(../pictures/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logotipo{
+    width: 60px;
+    height: 50px;
+}
+
+.cont_texto{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_cont_texto{
+    font-size: 48px;
+    color: rgb(189, 188, 188);
+} 
+
+.contCaixa_personas{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.p_cont_texto_dash{
+    font-size: 28px;
+    color: rgb(189, 188, 188);  
+}
+
+.p_cont_cidadao{
+    font-size: 36px;
+    color: rgb(246, 246, 246);
+}
+
+.p_cont_parceiro{
+    font-size: 36px;
+    color: rgb(246, 246, 246);
+}
+
+/* --------------------- */
+
+.contCaixa_cadastCidadao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.contCaixa_cadastParceiro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    flex-direction: row-reverse; 
+}
+
+.contCaixa_dashParceiro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    flex-direction: row-reverse; 
+}
+.imagem_parceiro{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 42%;
+    height: 800px; 
+}
+.img_imagem_parceiro{
+    width: 100%;
+    height: 1000px; 
+}
+
+.tabela_cidadao{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 52%;
+    height: 800px; 
+}
+
+.tabela_dash_parceiro{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 52%;
+    height: 800px;  
+}
+.escolha_parceiro{
+    margin: 40px;
+}
+.hr_separador{
+    border-left: thick solid gray;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.cor_texto{
+    color: rgb(30, 211, 30);
+}
+
+.form_doacao{
+    margin: 40px;
+}
+.texto_dash_parceiro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px; 
+    font-size: 40px; 
+}
+
+.a_link{
+    color: white;
+}
+
+
+@media screen and (max-width: 475px) {
+
+    .jumbotron{
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .brand-logo.right{
+        font-size: 27px;
+    }
+
+    .contCaixa_personas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .p_cont_texto{
+        font-size: 28px;
+        color: rgb(189, 188, 188);
+    } 
+
+    .p_cont_texto_doaFin{
+        font-size: 24px;
+        color: rgb(189, 188, 188); 
+    }
+
+    .p_cont_texto_dash{
+        font-size: 20px;
+        color: rgb(189, 188, 188);  
+        display: flex;
+        justify-content: center;
+    }
+
+    .texto_dash_parceiro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 250px;  
+    }
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 250px;  
+    }
+
+    .hr_separador{
+        display: none;
+    }
+
+    .form_cadastro_cidadao{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 250px;
+    }
+
+    .form_cadastro_parceiro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 250px;
+    }
+
+
+    .imagem_cidadao{
+        display: none;
+    }
+
+    .imagem_parceiro{
+        display: none;
+    }
+    
+}
+
+    @media screen and (max-width: 350px) {
+
+        .jumbotron{
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav .brand-logo.right{
+            font-size: 14px;
+        }
+        
+        .contCaixa_personas{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    
+        .p_cont_texto{
+            font-size: 28px;
+            color: rgb(189, 188, 188);
+        } 
+}
